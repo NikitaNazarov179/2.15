@@ -1,0 +1,2 @@
+
+UTF-8 is a variable-width character encoding used for electronic communication.
