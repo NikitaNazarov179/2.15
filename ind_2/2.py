@@ -25,19 +25,19 @@ if __name__ == "__main__":
         with open(fname, "r") as fna:
             inf = fna.readlines()
 
-            pred = " "
-            count = 1
+        pred = " "
+        count = 1
 
-            for i in inf:
-                # Поиск функции без комментария
-                if i.startswith("def ") and pred[0] != "#":
-                    skob = i.index("(")
-                    funk = i[4: skob]
+        for i in inf:
+            # Поиск функции без комментария
+            if i.startswith("def ") and pred[0] != "#":
+                skob = i.index("(")
+                funk = i[4: skob]
 
-                    print("Название файла: ", fname)
-                    print("Номер строки: ", count)
-                    print("Название функции: ", funk)
-                    print()
+                print("Название файла: ", fname)
+                print("Номер строки: ", count)
+                print("Название функции: ", funk)
+                print()
 
-                pred = i
-                count += 1
+            pred = i
+            count += 1
